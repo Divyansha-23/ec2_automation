@@ -7,5 +7,5 @@ cd ../windows
 ./windows1.sh 
 ./windows2.sh
 cd ..
-echo "Launching all instances…."
+echo "Launched all 5 instances"
 
