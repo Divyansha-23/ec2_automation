@@ -19,6 +19,6 @@ aws ec2 run-instances \
 --user-data "$USER_DATA" \
 --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$INSTANCE_NAME}]"
  
-echo "Windows2 EC2 instance with Jenkins is launching..."
+echo "Windows2 EC2 instance with Jenkins is launched"
 
 
