@@ -19,5 +19,5 @@ aws ec2 run-instances \
     --user-data "$USER_DATA" \
     --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$INSTANCE_NAME}]"
  
-echo "Linux3 EC2 instance with Python3 is launching..."
+echo "Linux3 EC2 instance with Python3 is launched"
 
