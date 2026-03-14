@@ -21,5 +21,5 @@ aws ec2 run-instances \
     --user-data "$USER_DATA" \
     --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$INSTANCE_NAME}]"
  
-echo "Linux EC2 instance with Docker is launching..."
+echo "Linux EC2 instance with Docker is launched"
 
