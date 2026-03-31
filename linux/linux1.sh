@@ -4,6 +4,4 @@ yum update -y
 yum install -y docker
 systemctl start docker
 systemctl enable docker
-
-echo "Linux EC2 instance with Docker is launched" > /home/ec2_automation/linux1_output.txt
-
+docker run -d -p 80:80 nginx bash -c "echo Docker installed successfully > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"

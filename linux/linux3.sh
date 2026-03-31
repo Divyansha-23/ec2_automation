@@ -2,6 +2,6 @@
 
 yum update -y
 yum install -y python3
- 
-echo "Linux3 EC2 instance with Python3 is launched" > /home/ec2_automation/linux3_output.txt
 
+echo "Linux server with python installed" > index.html
+nohup python3 -m http.server 80 &

@@ -1,5 +1,6 @@
 <powershell>
- 
+Install-WindowsFeature -name Web-Server -IncludeManagementTools
+Start-Service W3SVC 
 $hostname = $env:COMPUTERNAME
 $time = Get-Date
 $message = "HTML page created successfully"
@@ -60,7 +61,7 @@ p{
  
 "@
  
-Set-Content -Path "C:\index.html" -Value $html
+Set-Content -Path "C:\inetpub\wwwroot\index.html" -Value "<h1>Windows instance with html page created</h1>"
  
 $message | Out-File C:\windows2.txt
  
