@@ -1,0 +1,12 @@
+name: EC2 Automation
+ 
+on:
+  workflow_dispatch:
+ 
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo connected
+        run: echo "GitHub Actions is ready"
+ 
